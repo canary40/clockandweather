@@ -1,0 +1,142 @@
+body {
+	font-family: Arial, sans-serif;
+    	background-color: transparent;
+    	margin: 0 auto;
+	}
+
+.container {
+	width: 600px;
+	color: black;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+	margin-right: 0;
+	display: flex;
+	justify-content: space-between;
+	background: rgb(0, 0, 0, 0.2);
+	background-image: url('wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+#time, #date, #weather-description, #temperature {
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px gray;
+	}
+
+ {
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+	}
+
+.clock h1 {
+	font-size: 2.5em;
+	}
+
+.clock {
+	margin: 0 auto;
+	cursor: none;
+	}
+
+input {
+	width: 80%;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: text;
+	margin: 0 auto;
+	}
+
+button {
+	margin-top: 5px;
+	padding: 10px 20px;
+	border: none;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+	background: gray;
+	color: white;
+	border-radius: 5px;
+    	cursor: pointer;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto; 
+	max-width: 100px;
+	background-color: rgb(0, 0, 0, 0.4);
+	text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+	}
+
+button:hover {
+	background: black;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);	
+	text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px gray;
+	}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+hr {
+	color: transparent;
+	} 
+
+#separator1 {
+	transition: rotate(90deg);
+	margin: 10px;
+	}
+
+ #separator2 {
+	transition: rotate(90deg);
+	margin: 5px;
+	}
+
+.weather {
+	background: linear-gradient(90deg, rgba(0, 127, 255, 0.2), gray);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0 auto;
+	}
+
+#weather-icon {
+	width: 100px;
+	height: 100px; 
+	margin: 0 auto;
+	}
+
+.weather {
+	display: block;
+	}
+
+.container2 {
+	border: none;
+	height: 200px;
+	width: 160px;
+	}
+
+.row2 {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	}
+
+footer {
+	position: relative;
+	margin-left: -5%;
+  	top: 0;
+  	transform: rotate(90deg);
+  	transform-origin: left center;
+  	font-size: 0.8em;
+  	color: white;
+	}
