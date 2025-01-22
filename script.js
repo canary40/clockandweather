@@ -1,7 +1,5 @@
-// API Key di OpenWeatherMap (sostituisci con la tua chiave!)
 const WEATHER_API_KEY = "5e584f12fa87cb3dec3988c7924fac39";
 
-// Funzione per aggiornare l'orologio locale
 function updateClock() {
     const now = new Date();
 
@@ -21,11 +19,9 @@ function updateClock() {
     document.getElementById("date").textContent = `${day}, ${date}`;
 }
 
-// Aggiorna l'orologio ogni secondo
 setInterval(updateClock, 1000);
-updateClock(); // Esegui subito per evitare ritardo iniziale
+updateClock();
 
-// Funzione per ottenere i dati meteo
 async function getWeatherData(location) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&lang=it&appid=${WEATHER_API_KEY}`;
 
@@ -49,7 +45,6 @@ async function getWeatherData(location) {
     }
 }
 
-// Funzione per aggiornare l'interfaccia utente con meteo
 async function updateWeather(city) {
     const weatherData = await getWeatherData(city);
     if (!weatherData) return;
@@ -61,7 +56,6 @@ const weatherIcon = document.getElementById("weather-icon");
     weatherIcon.style.display = "block";
 }
 
-// Event Listener per il pulsante di ricerca
 document.getElementById("search-btn").addEventListener("click", () => {
     const location = document.getElementById("city-input").value.trim();
     if (location === "") {
